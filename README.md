@@ -1,33 +1,15 @@
-# Basic Web Dev Environment
+# Password Generator
 
-This repository represents my Basic Web Dev Environment. This environment is based on Vite and thus promises quick and easy operation.
+This repository represents my Simple Password Genereator. With this tool you can easily create a password of your choice.
 
 ## Usage
 
-### Initialize Vite
+### Clone the repository
 
-To use the environment, Vite needs to be initialized with the following command.
-
-``` bash
-> npm i
-```
-
-
-### Run local server
-
-To host a local server, the following command must be entered.
+Just write
 
 ``` bash
-> npm run dev
+> git clone https://github.com/VisualsOfPaul/Password-Generator.git
 ```
 
-You can then access `http://localhost:3000/`.
-
-
-### Build dist
-
-To build a dist folder from the edited files, the following command must be entered.
-
-``` bash
-> npm build
-```
+to clone and modify the repository on your desktop.
