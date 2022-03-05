@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <script type="module" crossorigin src="/Password-Generator/assets/index.248a7a33.js"></script>
+    <link rel="stylesheet" href="/Password-Generator/assets/index.54e333e8.css">
+  </head>
+  <body>
+
+    <!-- Content -->
+    <h1>Password Generator</h1>
+    <h2>Generate a password that meets your requirements. Make your own settings and copy the result to the clipboard. This page is open source and can be viewed on <a href="https://github.com/VisualsOfPaul/Password-Generator" target="_blank">GitHub</a>.</h2>
+    <div class="copyright"></div>
+
+    <div class="container">
+      <div class="containerSettings">
+        <h3>Settings</h3>
+        <div class="settings">
+          <div class="firstSwitch">
+            <input class="one" type="checkbox" id="switchNumber" checked/>
+            <label class="number" for="switchNumber"></label>
+            <div class="switchNumber">Numbers</div>
+          </div>
+
+          <div class="secondSwitch">
+            <input class="two" type="checkbox" id="switchLetter" checked/>
+            <label class="letter" for="switchLetter"></label>
+            <div class="switchLetter">Letters</div>
+          </div>
+
+          <div class="thirdSwitch">
+            <input class="three" type="checkbox" id="switchSymbol" checked/>
+            <label class="symbol" for="switchSymbol"></label>
+            <div class="switchSymbol">Symbols</div>
+          </div>
+
+          <div class="slider">
+            <input class="range" type="range" min="6" max="50" value="12"/>
+            <div class="rangeOutput"></div>
+          </div>
+
+          <button class="generate">Generate Password</button>
+          <button class="copy">Copy Password</button>
+        </div>
+      </div>
+
+      <div class="containerUpper">
+        <h3>Output</h3>
+        <div class="upper"></div>
+        <div class="fillSpace"></div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
