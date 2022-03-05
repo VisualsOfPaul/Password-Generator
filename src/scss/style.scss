@@ -1,0 +1,368 @@
+@import "preset";
+
+.container {
+    position: relative;
+    margin-top: 50px;
+}
+
+h1 {
+    position: relative;
+    margin: 0;
+    font-size: 75px;
+    font-weight: 600;
+    color: #F37631;
+}
+
+h2 {
+    position: relative;
+    color: $fontDarker;
+    font-size: 25px;
+    font-weight: 300;
+    width: 50vw;
+}
+
+h3 {
+    position: relative;
+    margin-bottom: -25px;
+    color: #F37631;
+    font-size: 17.5px;
+    font-weight: 300;
+}
+
+a {
+    color: #F37631;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 15px;
+    color: $fontDarker;
+}
+
+.containerUpper {
+    position: relative;
+    margin-left: 50px;
+    margin-top: 0;
+    float: left;
+}
+
+.upper {
+    position: relative;
+    padding: 15px;
+    margin-top: 35px;
+    display: block;
+    width: 100%;
+    max-width: calc(100vw - 500px);
+    background-color: $second;
+    border-radius: 7.5px;
+    overflow: hidden;
+}
+
+.char {
+    position: relative;
+    margin: 5px 5px;
+    float: left;
+    font-size: 20px;
+    width: 15px;
+    height: 35px;
+    border-radius: 7.5px;
+}
+
+.element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.containerSettings {
+    position: relative;
+    float: left;
+}
+
+.settings {
+    position: relative;
+    padding: 15px;
+    margin-top: 35px;
+    display: block;
+    width: 350px;
+    border: 1px solid $second;
+    border-radius: 7.5px;
+    overflow: hidden;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+    display: inline;
+	cursor: pointer;
+	width: 50px;
+	height: 25px;
+	background: $second;
+	display: block;
+	border-radius: 50px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: $third;
+}
+
+input:checked + label:after {
+	left: 100%;
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 75%;
+}
+
+.firstSwitch {
+    position: relative;
+    padding: 5px;
+    background-color: $secondLight;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.switchNumber {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.secondSwitch {
+    position: relative;
+    margin-top: 15px;
+    padding: 5px;
+    background-color: $secondLight;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.switchLetter {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.letter {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.thirdSwitch {
+    position: relative;
+    margin-top: 15px;
+    padding: 5px;
+    background-color: $secondLight;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.switchSymbol {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.symbol {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.slider {
+    position: relative;
+    margin-top: 15px;
+    padding: 5px;
+    background-color: $secondLight;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.range {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 200px;
+}
+
+.rangeOutput {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: $second;
+    height: 10px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: $second;
+    height: 10px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    background: #ffffff;
+    margin-top: -7.5px;
+    cursor: grab;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    margin-top: -5px;
+    cursor: grab;
+    border-radius: 50%;
+}
+
+.generate {
+    position: relative;
+    margin-top: 30px;
+}
+
+.copy {
+    position: relative;
+    margin-top: 15px;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+@media (max-width: 1025px) {
+    h2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .containerUpper {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .upper {
+        width: 85vw;
+        max-width: unset;
+    }
+
+    .fillSpace {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 415px) {
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        line-height: 25px;
+        width: 100%;
+        line-height: 30px;
+    }
+
+    .settings {
+        position: relative;
+        padding: 15px;
+        margin-top: 35px;
+        display: block;
+        width: 85vw;
+        border: 1px solid $second;
+        border-radius: 7.5px;
+        overflow: hidden;
+    }
+}
